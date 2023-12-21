@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <div class="herobackground">
+        <header>
+            <div class="mobileMenu hidden">
+                <div class="logo">
+                    <h3>DeMo</h3>
+                </div>
+                <div class="button">
+                    <button class="burger-button">=</button>
+                </div>
+            </div>
+            <nav class="container hidden">
+                <div class="logo hide-mobile">
+                    <h3>DeMo</h3>
+                </div>
+                <div class="navinfo">
+                    <div class="navlists">
+                        <div class="navlist">Service</div>
+                        <div class="navlist">Package</div>
+                        <div class="navlist">Who We Are</div>
+                        <div class="navlist">Out Portfolio</div>
+                        <div class="navlist">AboutUs</div>
+                    </div>
+                    <div class="navcontact">
+                        <div class="contactbutton">
+                            <a href="#">Contactus</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section>
+                <div class="hero container ">
+                    <div>
+                        <div class="heroinfo">
+                            <h3>Best <span>Marketing</span></h3>
+                            <h3>company</h3>
+                        </div>
+                        <div class="heroinfoheading">
+                            <h3>#1 MARKETING Services Agency in USA & UK</h3>
+                        </div>
+                        <div class="heroinfocontent">
+                            <h3>If you're looking for the best SEO company for your business,
+                                PageTraffic is the perfect choice. </h3>
+                        </div>
+                        <div class="heroinfonavigation">
+                            <div class="getstartedbtn">
+                                <a href="#">Get Started</a>
+                            </div>
+                            <div class="watchvideo">
+                                <a href="#">Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heroimage">
+                        <img src="./assets/img/banner.png" alt="best marketing company" />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="headingfeatured">
+                    <h3>Our Work Featured on</h3>
+                </div>
+                <marquee behavior="" direction="">
+                    <div class="headingfeaturedclient">
+                        <div class="featuredclientimg">
+                            <img src="./assets/img/netflix.png" alt="">
+                        </div>
+                        <div class="featuredclientimg">
+                            <img src="./assets/img/netflix.png" alt="">
+                        </div>
+                        <div class="featuredclientimg">
+                            <img src="./assets/img/netflix.png" alt="">
+                        </div>
+                        <div class="featuredclientimg">
+                            <img src="./assets/img/netflix.png" alt="">
+                        </div>
+                        <div class="featuredclientimg">
+                            <img src="./assets/img/netflix.png" alt="">
+                        </div>
+                    </div>
+                </marquee>
+            </section>
+            <section>
+                <div class="getintouch">
+                    <div class="contactimage">
+                        <img src="./assets/img/contact.png" alt="">
+                    </div>
+
+                    <div class="sizedbox"></div>
+
+                    <div class="contactform">
+                        <div class="contactformtext ">
+                            <h3>Get in touch</h3>
+                            <p>Our friendly team would love to hear from you.</p>
+                        </div>
+                        <div class="contactforminput1 ">
+                            <div class="firstname form-input">
+                                <span>First Name</span>
+                                <input placeholder="First name" onfocusout="firstnameValidate()"
+                                id="firstname"
+                                class="form-input-outline" type="text">
+                                <span class="danger firstname_danger">Please input name</span>
+                            </div>
+                            <div class="email form-input">
+                                <span>email</span>
+                                <input placeholder="Email" 
+                                onfocusout = "emailValidate()"
+                                id="email"
+                                class="form-input-outline" type="email">
+                                <span class="danger email_danger">Please Enter email</span>
+                            </div>
+                        </div>
+                        <div class="contactforminput2">
+                            <div class=" form-input businessname">
+                                <span>Business Name</span>
+                                <input placeholder="businessname" 
+                                onfocusout = "businessValidate()"
+                                id="business"
+                                class="form-input-outline" type="text">
+                                <span class="danger business_danger">Please enter value</span>
+                            </div>
+                        </div>
+                        <div class="contactforminput3">
+                            <div class="phonenumber form-input">
+                                <span>Phone number</span>
+                                <input placeholder="Mobile Number"
+                                onfocusout = "phoneValidate();" 
+                                id="phone"
+                                class="form-input-outline" type="number">
+                                <span class="danger phone_danger">Please input mobile number</span>
+                            </div>
+                        </div>
+                        <div class="contactforminput4">
+                            <div class="message form-input" >
+                                <span>Message</span>
+                               <textarea class="form-input-outline" 
+                               id="message"
+                               onfocusout="messageValidate()"
+                               name="" id="" cols="30" rows="5"></textarea>
+                               <span class="danger message_danger">Atleast 40 character</span>
+                            </div>
+                        </div>
+                        <div class="termsandconditions">
+                            <div class="inputcheck">
+                                <input type="checkbox" id="checkbox">
+                            </div>
+                            <div class="terms">
+                                <p>You agree to our friendly <span><a class="text-underline" href="#">privacy policy.</a></span></p>
+                            </div>
+                        </div>
+                        <div class="butttonsubmit">
+                            <a id="submitButton">
+                                Submit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                   <div class="blogs">
+                    <h3>See Our Blog Post</h3>
+                    <div class="blogscontainer">
+                        <div class="blogposts">
+                            <div class="blogpost">
+                                    <img class="red-border" src="./assets/img/blog.png" alt="">
+                            </div>
+                            <div class="blogtext">
+                                <div class="blogdate">
+                                    <p>19 Feb, 2022/ By Admin</p>
+                                </div>
+                                <div class="blogtitle">
+                                    <h3>UI/UX design Tips</h3>
+                                </div>
+                                <div class="bloginfo">
+                                    <p>Promotion World has once placed
+                                        PageTraffic among the top.</p>
+                                </div>
+                                <div class="blogreadmore">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogposts-green">
+                            <div class="blogpost">
+                                    <img class="green-border" src="./assets/img/blog.png" alt="">
+                            </div>
+                            <div class="blogtext">
+                                <div class="blogdate">
+                                    <p>19 Feb, 2022/ By Admin</p>
+                                </div>
+                                <div class="blogtitle">
+                                    <h3>UI/UX design Tips</h3>
+                                </div>
+                                <div class="bloginfo">
+                                    <p>Promotion World has once placed
+                                        PageTraffic among the top.</p>
+                                </div>
+                                <div class="blogreadmore">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogposts">
+                            <div class="blogpost">
+                                    <img class="red-border" src="./assets/img/blog.png" alt="">
+                            </div>
+                            <div class="blogtext">
+                                <div class="blogdate">
+                                    <p>19 Feb, 2022/ By Admin</p>
+                                </div>
+                                <div class="blogtitle">
+                                    <h3>UI/UX design Tips</h3>
+                                </div>
+                                <div class="bloginfo">
+                                    <p>Promotion World has once placed
+                                        PageTraffic among the top.</p>
+                                </div>
+                                <div class="blogreadmore">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogposts-green">
+                            <div class="blogpost">
+                                    <img class="green-border" src="./assets/img/blog.png" alt="">
+                            </div>
+                            <div class="blogtext">
+                                <div class="blogdate">
+                                    <p>19 Feb, 2022/ By Admin</p>
+                                </div>
+                                <div class="blogtitle">
+                                    <h3>UI/UX design Tips</h3>
+                                </div>
+                                <div class="bloginfo">
+                                    <p>Promotion World has once placed
+                                        PageTraffic among the top.</p>
+                                </div>
+                                <div class="blogreadmore">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </section>
+        </header>
+    </div>
+
+
+    <!-- script files  -->
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
