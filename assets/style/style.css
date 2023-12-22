@@ -9,6 +9,10 @@
 .burger-button{
     border-radius: 10px;
 }
+.navcontact{
+    display: flex;
+    align-items: center ;
+}
 a{
     text-decoration: none;
     color: black;
@@ -46,9 +50,16 @@ nav{
 .navlists{
     display: flex;
     padding-right: 40px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.navlist:hover{
+    border-bottom: 2px solid red;
 }
 .navlist{
-    margin-left: 10px;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
 }
 .container{
     max-width: 1200px;
@@ -101,10 +112,21 @@ nav{
 }
 .heroinfonavigation{
     display: flex;
+    align-items: center;
     padding: 40px 0px;
 }
 .getstartedbtn , .watchvideo{
     padding-right: 15px;
+}
+.watchvideo{
+    display: flex;
+  align-items: center;
+}
+.watchvideo img{
+    padding-right: 10px;
+}
+.watchvideo a{
+    text-decoration: underline;
 }
 .headingfeatured h3, .blogs h3{
     text-align: center;
@@ -176,6 +198,18 @@ nav{
   border-radius: 5px;
   border: 1px solid #80808042;
 }
+.phonenumber select{
+    border-right: none;
+  border-radius: 5px 0 0 5px;
+  background: transparent;
+}
+.phonenumber input{
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+#phone{
+    width: 100%;
+}
 .termsandconditions{
     display: flex;
     padding: 20px 0;
@@ -210,6 +244,19 @@ marquee{
     border: 2px solid #8080802e;
   border-radius: 20px;
   margin: 10px 10px;
+}
+.blogposts .blogreadmore a{ 
+    color: #E71D36;
+}
+.blogreadmore{
+    display: flex;
+    align-items: center;
+}
+.blogreadmore img{
+    padding: 0 10px;
+}
+.blogposts-green .blogreadmore a{ 
+   color: #2EC4B6;
 }
 .blogposts-green{
     display: flex;
@@ -291,6 +338,10 @@ marquee{
         box-shadow: 0px 4px 12px 0px rgba(46, 196, 182, 0.48);
 
     }
+    .btn div a {
+        cursor: pointer;
+    }
+    
     .btn{
         margin: 25px 0;
     }
@@ -308,6 +359,7 @@ marquee{
 }
 .businessgrowthinfo{
     padding-right: 100px;
+    margin-top: 50px;
 }
 .businessgrowthinfo h3{
     font-weight: 500;
@@ -338,7 +390,18 @@ marquee{
 .growthkey{
     width: 100%;
     /* border: 1px solid; */
-    border-image: linear-gradient(#FF1D03, #ffffff) 30;
+    border-image: linear-gradient(#FF1D03, #ffffff) 90;
+    padding: 20px;
+    /* border-radius: 15px; */
+    /* margin: 5px; */
+    filter: drop-shadow(0px 4px 13px rgba(0,0,0,0.06));
+    background-color: white;
+    border-radius: 9px;
+}
+.growthkey-green{
+    width: 100%;
+    /* border: 1px solid; */
+    border-image: linear-gradient(#2ec4b6, #ffffff) 90;
     padding: 20px;
     /* border-radius: 15px; */
     /* margin: 5px; */
@@ -350,10 +413,18 @@ marquee{
     margin: 20px 0;
 }
 .section{
-    padding: 20px 0;
+    padding: 50px 0;
 }
-.growthkey > *{
+.growthkey > *, .growthkey-green > *{
     padding: 10px 0;
+}
+.growthkey-green a{
+    color: #2EC4B6;
+    cursor: pointer;
+
+}
+.growthkey a{
+    color: #FF1D03;
 }
 .grwrap {
     background-image: linear-gradient(to bottom, #FF1D03, #ffffff); /* Linear gradient from top to bottom */
@@ -361,10 +432,117 @@ marquee{
     border-radius: 10px;
     margin: 20px 0; 
 }
+.grwrap-green {
+    background-image: linear-gradient(to bottom, #2ec4b6, #ffffff); /* Linear gradient from top to bottom */
+    padding: 1px;
+    border-radius: 10px;
+    margin: 20px 0; 
+}
+.footers{
+    display: flex;
+    width: 100%;
+}
+.footerlogo{
+    width: 50%;
+}
+.footermenu{
+    width: 20%;
+}
+.footernews{
+    width: 30%;
+}
+.footermenu > *{
+    padding-bottom: 10px;
+}
+.footermenu h3, .footernews h3{
+    color: #2EC4B6;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.newsinfo h3{
+    color: #2EC4B6;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.footercopyrihgt{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.newsimg img{
+    width: 100%;
+    height: auto;
+}
+.colorb{
+    color: #2EC4B6;
+}
+.newsimg{
+    width: 25%;
+}
+.newsinfo{
+    width: 75%;
+    padding-left: 20px;
 
+}
+.newsdate li {
+    list-style-position: inside;
+}
+.logoinfo{
+    padding: 0 0 30px 0px;
+    line-height: 30px;
+    padding-right: 279px;
+}
+.newsdate li{
+    /* list-style: none; */
+    color: #E71D36;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.newsdes{
+    padding: 5px 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+.newsdate{
+    font-size: 10px;
+    letter-spacing: 0.55px;
+}
+.socialicon{
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+    cursor: pointer ;
+}
+@media only screen and (max-width: 1024px) {
+    .logoinfo{
+        padding-right: 10px;
+    }
+    .blogposts, .blogposts-green{
+        width: 100%;
+    }
+}
 
+/* //tab view  */
 
 @media only screen and (max-width: 768px) {
+    .footercopyrihgt{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .footercopyrihgt > *{
+        padding: 5px 0 ;
+
+    }
+    .logoinfo{
+        padding: 20px 0;
+        line-height: 30px;
+        padding-right: 10px;
+    }
     .hidden{
         display: none;
     }
@@ -404,7 +582,7 @@ marquee{
    
     .contactforminput1{
         display: flex; 
-        width: calc(100% - 20px);
+        /* width: calc(100% - 20px); */
     }
    nav, .navinfo, .navlists{
     flex-direction: column !important;
@@ -417,7 +595,7 @@ marquee{
     padding: 0 0 20px 20px;
 }
    .mobileMenu{
-    padding: 20px;
+    /* padding: 20px; */
     display: block;
     display: flex;
   justify-content: center;
@@ -437,11 +615,15 @@ marquee{
 }
    .navcontact{
     padding: 20px 0;
+
    }
    .navlist{
     padding: 10px 0;
    }
    .blogposts{
+    width: 100%;
+  } 
+  .blogposts-green{
     width: 100%;
   } 
   .getintouch {
@@ -480,15 +662,42 @@ marquee{
     display: flex;
     flex-direction: column;
 }
+.flex-direction-row{
+    flex-direction: row !important;
+}
 .businessgrowthinfo, .businessgrowthlists{
     width: 100%;
+}
+.footers{
+    display: flex;
+    flex-direction: column  ;
+    width: 100%;
+}
+.footerlogo{
+    width: 100%;
+    padding: 10px 0;
+}
+.footermenu{
+    width: 100%;
+    padding: 10px 0;
+
+}
+.footernews{
+    width: 100%;
+    padding: 10px 0;
+}
+.businessgrowthinfo{
+    padding-right: 0;
 }
 
   }
   
+  /* //mobile */
 
   @media only screen and (max-width: 320px) {
-   
+        .blogposts{
+            flex-direction: column;
+        }
     nav, .navinfo, .navlists{
      flex-direction: column !important;
     }

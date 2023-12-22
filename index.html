@@ -57,6 +57,7 @@
                                 <a href="#">Get Started</a>
                             </div>
                             <div class="watchvideo">
+                                <img src="assets/img/watch.png" alt="" />
                                 <a href="#">Watch Video</a>
                             </div>
                         </div>
@@ -107,7 +108,7 @@
                                 <li>PageTraffic offers top-notch SEO and.</li>
                                 </ul>
                         </div>
-                        <div class="row d-flex ">
+                        <div class="row d-flex flex-direction-row">
                             <div class="col audienceHead">
                                 <div>1.9k</div>
                                 <div>Total Audience</div>
@@ -140,8 +141,8 @@
                             </div>
                         </div>
                       </div>
-                      <div class="grwrap">
-                        <div class="growthkey">
+                      <div class="grwrap-green">
+                        <div class="growthkey-green">
                             <div>
                                 <img src="./assets/img/key.png" alt="">
                             </div>
@@ -158,8 +159,8 @@
                       </div>
                       </div>
                       <div class="right">
-                        <div class="grwrap">
-                            <div class="growthkey">
+                        <div class="grwrap-green">
+                            <div class="growthkey-green">
                                 <div>
                                     <img src="./assets/img/key.png" alt="">
                                 </div>
@@ -237,16 +238,25 @@
                                 <span class="danger business_danger">Please enter value</span>
                             </div>
                         </div>
+
                         <div class="contactforminput3">
                             <div class="phonenumber form-input">
                                 <span>Phone number</span>
-                                <input placeholder="Mobile Number"
-                                onfocusout = "phoneValidate();" 
-                                id="phone"
-                                class="form-input-outline" type="number">
+                                <div class="d-flex">
+                                    <select class="form-input-outline">
+                                        <option value="in">In</option>
+                                        <option value="us">Us</option>
+                                    </select>
+                                    <input placeholder="Mobile Number"
+                                        onfocusout="phoneValidate();"
+                                        id="phone"
+                                        class="form-input-outline" type="number">
+                                </div>
                                 <span class="danger phone_danger">Please input mobile number</span>
                             </div>
                         </div>
+
+                        
                         <div class="contactforminput4">
                             <div class="message form-input" >
                                 <span>Message</span>
@@ -254,11 +264,11 @@
                                id="message"
                                onfocusout="messageValidate()"
                                name="" id="" cols="30" rows="5"></textarea>
-                               <span class="danger message_danger">Atleast 40 character</span>
+                               <span class="danger message_danger">Atleast 40 character max 200 character</span>
                             </div>
                         </div>
                         <div class="termsandconditions">
-                            <div class="inputcheck">
+        <div class="inputcheck" onclick="checkTerms()">
                                 <input type="checkbox" id="checkbox">
                             </div>
                             <div class="terms">
@@ -277,11 +287,13 @@
                 <div class="container">
                    <div class="blogs">
                     <h3>See Our Blog Post</h3>
+                    <!-- <div class="slider"></div> -->
                     <div class="blogscontainer">
                         <div class="blogposts">
                             <div class="blogpost">
                                     <img class="red-border" src="./assets/img/blog.png" alt="">
                             </div>
+                            
                             <div class="blogtext">
                                 <div class="blogdate">
                                     <p>19 Feb, 2022/ By Admin</p>
@@ -295,6 +307,7 @@
                                 </div>
                                 <div class="blogreadmore">
                                     <a href="#">Read More</a>
+                                    <img src="./assets/img/arrow-right.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -316,6 +329,29 @@
                                 </div>
                                 <div class="blogreadmore">
                                     <a href="#">Read More</a>
+                                    <img src="./assets/img/arrow-right(1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogposts-green">
+                            <div class="blogpost">
+                                    <img class="green-border" src="./assets/img/blog.png" alt="">
+                            </div>
+                            <div class="blogtext">
+                                <div class="blogdate">
+                                    <p>19 Feb, 2022/ By Admin</p>
+                                </div>
+                                <div class="blogtitle">
+                                    <h3>UI/UX design Tips</h3>
+                                </div>
+                                <div class="bloginfo">
+                                    <p>Promotion World has once placed
+                                        PageTraffic among the top.</p>
+                                </div>
+                                <div class="blogreadmore">
+                                    <a href="#">Read More</a>
+                                    <img src="./assets/img/arrow-right(1).png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -337,33 +373,108 @@
                                 </div>
                                 <div class="blogreadmore">
                                     <a href="#">Read More</a>
+                                    <img src="./assets/img/arrow-right.png" alt="">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="blogposts-green">
-                            <div class="blogpost">
-                                    <img class="green-border" src="./assets/img/blog.png" alt="">
+                    </div>
+                   </div>
+                </div>
+            </section>
+            <section>
+                <footer>
+                    <div class="logo container ">
+                        <h3>DeMo.</h3>
+                    </div>
+                    <div class="footers section container">
+                        <div class="footerlogo ">
+                            <div class="logoinfo">
+                                <p>FindBestSEO has ranked PageTraffic among the top 10 SEO companies for 2020.</p>
                             </div>
-                            <div class="blogtext">
-                                <div class="blogdate">
-                                    <p>19 Feb, 2022/ By Admin</p>
+                            <div class="socialicon">
+                                <div class="social"><img src="./assets/img/fb.png" alt=""></div>
+                                <div class="social"><img src="./assets/img/lb.png" alt=""></div>
+                                <div class="social"><img src="./assets/img/twitter.png" alt=""></div>
+                                <div class="social"><img src="./assets/img/yt.png" alt=""></div>
+                                <!-- <div class="social"></div>
+                                <div class="social"></div>
+                                <div class="social"></div> -->
+                            </div>
+                        </div>
+                        <div class="footermenu">
+                            <div>
+                                <h3>COMPANY</h3>
+                            </div>
+                            <div>
+                                <a href="#">About</a>
+                            </div>
+                            <div>
+                                <a href="#">Service</a>
+                            </div>
+                            <div>
+                                <a href="#">Press</a>
+                            </div>
+                            <div>
+                                <a href="#">Resources</a>
+                            </div>
+                            <div>
+                                <a href="#">Blog</a>
+                            </div>
+                        </div>
+                        <div class="footernews">
+                            <div>
+                                <h3>LATEST NEWS</h3>
+                            </div>
+                            <div class="d-flex flex-direction-row pb-10">
+                                <div class="newsimg">
+                                    <img src="./assets/img/blogs.png" alt="">
                                 </div>
-                                <div class="blogtitle">
-                                    <h3>UI/UX design Tips</h3>
+                                <div class="newsinfo">
+                                    <div class="newsheading">
+                                        <h3>Per Click Management</h3>
+                                    </div>
+                                    <div class="newsdes">
+                                        <p>PageTraffic is a premier Search
+                                            Engine Marketing ( SEM).</p>
+                                    </div>
+                                    <div class="newsdate">
+                                        <li>15 April 2021</li>
+                                    </div>
                                 </div>
-                                <div class="bloginfo">
-                                    <p>Promotion World has once placed
-                                        PageTraffic among the top.</p>
+                            </div>
+                            <div class="d-flex flex-direction-row pb-10">
+                                <div class="newsimg">
+                                    <img src="./assets/img/blogs.png" alt="">
                                 </div>
-                                <div class="blogreadmore">
-                                    <a href="#">Read More</a>
+                                <div class="newsinfo">
+                                    <div class="newsheading">
+                                        <h3>Per Click Management</h3>
+                                    </div>
+                                    <div class="newsdes">
+                                        <p>PageTraffic is a premier Search
+                                            Engine Marketing ( SEM).</p>
+                                    </div>
+                                    <div class="newsdate">
+                                        <li>15 April 2021</li>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   </div>
-                </div>
+                    <div class="footercopyrihgt container ">
+                            <div>
+                                <p>
+                                    © 2021 DeMO Insurance Inc. Patent Pending. All Rights Reserved.
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                   <a href="#" class="colorb"> Privacy</a> | Terms of Service
+                                </p>
+                            </div>
+                    </div>
+                </footer>
             </section>
            
         </header>

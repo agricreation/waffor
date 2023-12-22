@@ -52,6 +52,7 @@ function validateForm(e){
 
     }else{
         console.log("not checked");
+        checkTerms();
         firstnameValidate();
         emailValidate();
         businessValidate();
@@ -79,6 +80,13 @@ submitButton.addEventListener('click',(e)=>{
     validateForm(e);
 })
 
+function checkTerms(){
+   if(isChecked){
+    document.querySelector('.terms').style.color = "black" 
+   }else{
+        document.querySelector('.terms').style.color = "red" 
+   }
+}
 
 function firstnameValidate(){
     if (document.querySelector('#firstname').value.length == 0) {
@@ -118,19 +126,16 @@ function phoneValidate(){
         hideErrorMessage('phone_danger');
        }
 }
-function messageValidate(){
-    if(document.querySelector("#message").value.length <= 40){
-        console.log("less than 40");
+function messageValidate() {
+    const messageLength = document.querySelector("#message").value.length;
+
+    if (messageLength < 40 || messageLength > 200) {
         showErrorMessage('message_danger');
-    }else{
-        console.log("greater than 40");
-    }
-    if(document.querySelector('#message').value.length == 0){
-        showErrorMessage('message_danger');
-       }else{
+    } else {
         hideErrorMessage('message_danger');
     }
 }
+
 
 
 
