@@ -204,7 +204,8 @@ marquee{
 }
 .blogposts{
     display: flex;
-    width: calc(50% - 30px);
+    /* width: calc(50% - 30px); */
+    width: 48%;
     background-image: linear-gradient(to right, #fff8f8, #fff8f8);
     border: 2px solid #8080802e;
   border-radius: 20px;
@@ -212,7 +213,8 @@ marquee{
 }
 .blogposts-green{
     display: flex;
-    width: calc(50% - 30px);
+    /* width: calc(50% - 30px); */
+    width: 48%;
     background-image: linear-gradient(to right, #fff8f8,#f8fffe);
     border: 2px solid #8080802e;
   border-radius: 20px;
@@ -227,7 +229,7 @@ marquee{
 }
 .blogscontainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
   flex-wrap: wrap;
   margin-top: 80px;
@@ -328,19 +330,21 @@ marquee{
     padding: 0 10px;
 }
 .right{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .left{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .growthkey{
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-image: linear-gradient(#FF1D03, #ffffff) 30;
     padding: 20px;
-    border-radius: 15px;
-    margin: 5px;
+    /* border-radius: 15px; */
+    /* margin: 5px; */
     filter: drop-shadow(0px 4px 13px rgba(0,0,0,0.06));
+    background-color: white;
+    border-radius: 9px;
 }
 .businessgrowth{
     margin: 20px 0;
@@ -351,6 +355,14 @@ marquee{
 .growthkey > *{
     padding: 10px 0;
 }
+.grwrap {
+    background-image: linear-gradient(to bottom, #FF1D03, #ffffff); /* Linear gradient from top to bottom */
+    padding: 1px;
+    border-radius: 10px;
+    margin: 20px 0; 
+}
+
+
 
 @media only screen and (max-width: 768px) {
     .hidden{
@@ -464,6 +476,13 @@ marquee{
   .heroinfo h3{
     font-size: 40px;
   }
+  .d-flex{
+    display: flex;
+    flex-direction: column;
+}
+.businessgrowthinfo, .businessgrowthlists{
+    width: 100%;
+}
 
   }
   
